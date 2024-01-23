@@ -1,0 +1,11 @@
+{
+  "ApplicationName": "CyclePredictor DashBoard",
+  "Url": "/CyclePredictor/CyclePredictorDashboard/Dashboard",
+  "IconImageUrl": "/Plugin/CyclePredictor/logo.png",
+  "IconClass": "icon-th-large-outline",
+  "AreaName": "CyclePredictor",
+  "Roles": [ "Administrator" ],
+  "Children": [
+    
+  ]
+}

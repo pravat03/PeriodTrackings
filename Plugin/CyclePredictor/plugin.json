@@ -1,0 +1,14 @@
+{
+  "Group": "CyclePredictor",
+  "FriendlyName": "CyclePredictor",
+  "SystemName": "CyclePredictor",
+  "Version": 0.3,
+  "SupportedVersions": [ "0.3" ],
+  "Author": "Appman team",
+  "DisplayOrder": 1,
+  "FileName": "CyclePredictor.dll",
+  "Description": "Point Of Storage",
+  "InstallationUrl": "/CyclePredictor/CyclePredictorInstall/Install",
+  "UnInstallationUrl": "/CyclePredictor/CyclePredictorInstall/UnInstall",
+  "Dependency": []
+}

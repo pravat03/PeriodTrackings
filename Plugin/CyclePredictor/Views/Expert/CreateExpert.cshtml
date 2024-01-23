@@ -1,0 +1,86 @@
+﻿@model CloudVOffice.Data.DTO.CyclePredictor.ExpertDTO;
+@using System.Collections;
+@using Newtonsoft.Json;
+@{
+	Layout = "_MainAppLayout";
+	ViewData["Title"] = "Bank";
+}
+@addTagHelper *, Syncfusion.EJ2
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<header class="main-heading">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xl-8 col-lg-8 col-md-8 col-sm-8">
+				<div class="page-icon">
+					<i class="icon-laptop_windows"></i>
+				</div>
+				<div class="page-title">
+					<h5>Expert</h5>
+
+				</div>
+			</div>
+			<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+				<div class="right-actions">
+					<span class="last-login">  </span>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<div class="main-content">
+	<div class="row gutters">
+		<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+
+			<div class="card">
+				<form asp-route="/CyclePredictor/Expert/CreateExpert" method="post" autocomplete="off">
+					<div asp-validation-summary="ModelOnly" class="message-error"></div>
+
+
+					<div class="card-header"><b>Expert Create</b></div>
+					<div class="card-body">
+						<div class="form-row">
+							<div class="form-group col-md-4">
+								<input asp-for="@Model.ExpertId" type="hidden" />
+								<label for="ExpertName" class="form-label">Expert Name</label>
+								<input asp-for="@Model.ExpertName" type="text" class="form-control" autofocus="autofocus" placeholder="Expert Name" />
+								<span asp-validation-for="ExpertName"></span>
+							</div>
+							<div class="form-group col-md-4">
+								<label for="Age" class="form-label">Age</label>
+								<input asp-for="@Model.Age" type="text" class="form-control" autofocus="autofocus" placeholder="Age" />
+								<span asp-validation-for="Age"></span>
+							</div>
+							<div class="form-group col-md-4">
+								<label for="Gender" class="form-label">Gender</label>
+								<input asp-for="@Model.Gender" type="text" class="form-control" autofocus="autofocus" placeholder="Gender" />
+								<span asp-validation-for="Gender"></span>
+							</div>
+						</div>
+
+					</div>
+					<div class="card-body">
+						<div class="form-row">
+							<div class="form-group col-md-4">
+								<input asp-for="@Model.ExpertId" type="hidden" />
+								<label for="Mailid" class="form-label">Mail id</label>
+								<input asp-for="@Model.Mailid" type="text" class="form-control" autofocus="autofocus" placeholder="Mail id" />
+								<span asp-validation-for="Mailid"></span>
+							</div>
+					</div>
+					</div>
+					<div class="card-body">
+
+						<div class="col-lg-2 col-md-2 col-sm-12">
+							<button type="submit" class="btn btn-primary">Save</button>
+						</div>
+					</div>
+
+				</form>
+
+			</div>
+
+		</div>
+	</div>
+
+</div>
